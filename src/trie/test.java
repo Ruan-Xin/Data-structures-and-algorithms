@@ -23,8 +23,7 @@ public class test {
 		}else {
 			System.err.println("search faild");
 		}
-		trie_node location = t.root;
-		t.travel_trie(location);
+		t.travel_trie(t.root);
 	}
 
 }
