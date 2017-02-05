@@ -23,9 +23,6 @@ public class trie {
 		}
 		return true;
 	}
-	/*返回参数：
-	 * -1:插入单词失败
-	 * 1:插入单词成功*/
 	public int insert_trie(String targetStr){
 		StringBuilder sb = new StringBuilder();
 		if (root == null) {
@@ -48,7 +45,7 @@ public class trie {
 				location = location.branch[char_code];
 				location.data = sb.toString(); 
 			}else {
-				location = root.branch[char_code];
+				location = location.branch[char_code];
 			}
 			if (i == targetStr.length() - 1) {
 				location.isLeaf = true;
