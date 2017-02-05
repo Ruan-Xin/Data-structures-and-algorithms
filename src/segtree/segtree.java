@@ -21,8 +21,6 @@ public class segtree {
 		this.root = root;
 	}
 	public void seg_build(seg_node root,int start,int end) {
-		System.out.println(111);
-		//seg_node location = root;
 		int index = (start + end) / 2;
 		if (index == start) {
 			return;
