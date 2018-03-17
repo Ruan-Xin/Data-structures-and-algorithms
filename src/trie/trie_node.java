@@ -1,7 +1,7 @@
 package trie;
 
 public class trie_node {	
-	public String data;//从root节点到该节点组成的单词
+	public String data;
 	public boolean isLeaf;
 	public trie_node[] branch;
 	public trie_node() {
@@ -10,7 +10,7 @@ public class trie_node {
 		for(int i = 0; i < 26;i++){
 			branch[i] = null;
 		}
-		isLeaf = false;//初始化为false
+		isLeaf = false;
 	}
 	
 }

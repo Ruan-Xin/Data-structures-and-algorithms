@@ -2,7 +2,7 @@ package bst;
 
 public class Bst {
 	bst_node root;
-	int count;//½ÚµãÊý
+	int count;
 	public Bst(bst_node root) {
 		// TODO Auto-generated constructor stub
 		this.root = root;

@@ -1,5 +1,5 @@
 package trie;
-//前缀树
+
 public class trie {
 	public trie_node root;
 	public boolean search_trie(String targetStr) {
@@ -36,10 +36,10 @@ public class trie {
 			}else if (targetStr.charAt(i) >= 'a' && targetStr.charAt(i) <= 'z') {
 				char_code = targetStr.charAt(i) - 'a';
 			}else {
-				return -1;//非法单词
+				return -1;
 			}
 			sb.append(targetStr.charAt(i));
-			//还未存在该分支
+
 			if (location.branch[char_code] == null) {
 				location.branch[char_code] = new trie_node();
 				location = location.branch[char_code];
